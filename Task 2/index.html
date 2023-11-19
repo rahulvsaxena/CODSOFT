@@ -1,0 +1,175 @@
+<html>
+<head>
+    <style>
+        /* External CSS code */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            height: 60px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 40px;
+            margin-left: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-left: 73%;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .banner {
+            height: 100vh;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner h1 {
+            color: white;
+            font-size: 60px;
+            text-shadow: 2px 2px 4px black;
+            position: absolute; /* Added this line to make the text above the image */
+        }
+
+        .courses {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .course {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 20px;
+        }
+
+        .course h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .signup {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px #ddd;
+            padding: 20px;
+        }
+
+        .signup h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup input {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup button {
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            height: 60px;
+        }
+
+        .footer p {
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .footer a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML code -->
+    <div class="navbar">
+        <img src="logo.svg" alt="Company logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Signup</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="background.jpg" alt="Background image" width="100%" height="100%"> <!-- Added this line to show the image -->
+        <h1>Welcome to our website</h1>
+    </div>
+    <div class="courses">
+        <div class="course">
+            <h3>DSA</h3>
+            <p>Learn the fundamentals of data structures and algorithms, and how to apply them in real-world problems.</p>
+        </div>
+        <div class="course">
+            <h3>HTML</h3>
+            <p>Learn the basics of HTML, the markup language that defines the structure and content of web pages.</p>
+        </div>
+        <div class="course">
+            <h3>CSS</h3>
+            <p>Learn the basics of CSS, the style sheet language that controls the appearance and layout of web pages.</p>
+        </div>
+    </div>
+    <div class="signup">
+        <h2>Signup for free</h2>
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Contact us: 123-456-7890</p>
+        <a href="#">Location: Sector 27, Near Max Hospital</a>
+    </div>
+</body>
+</html>

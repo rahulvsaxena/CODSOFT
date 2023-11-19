@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #35424a;
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+}
+
+#about {
+    display: flex; /* This will put your image and text side by side */
+    align-items: center; /* This will vertically align the items to the center */
+    justify-content: center; /* This will horizontally align the items to the center */
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#about img {
+    margin-right: 20px; /* This will add some space between your image and text */
+    margin-left: 250px;
+    width: 150px;  
+    height: 150px; 
+}
+
+#about p {
+    margin-right: 250px;
+    text-align: justify;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1px; /* adjust as needed */
+}
+
+#skills img {
+    width: 30%;
+    height: auto;
+}
+
+
+#skills p{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: justify
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+#resume{
+    padding: 50px;
+    margin: 20px;
+}
+
+#contact {
+    padding: 20px;
+    margin: 50px;
+}
+
+footer {
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
